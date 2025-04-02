@@ -1,0 +1,41 @@
+import sys
+print("Welcom to the Grade Counter. ")
+username=input("Enter your username here:")
+password=input("Enter your password here:")
+
+correct_username = "abk"
+correct_password ="ankit"
+
+if username == correct_username and password == correct_password:
+    print("Your have unlocked your device.")
+else:
+    print("Please check your username and password\n.")
+    sys.exit()
+
+
+
+print("\nENGLISH MEDIUM GOVERNMENT SCHOOL")
+marks = int(input("Enter Marks:"))
+
+if marks < 0 :
+    print("Please enter a positive.")
+
+elif marks > 100:
+    print("Please enter till 100 marks only.")
+elif 80 <= marks <= 100:
+    print("This student got 'A+' Grade.")
+
+elif 70 <= marks < 80:
+    print("This student got 'B+' Grade.")
+
+elif 60 <= marks < 70:
+    print("This student got 'C+' Grade.")
+
+elif 50 <= marks <60:
+    print("This student got 'D+' Grade.")
+
+elif 35 <=marks <50:
+    print("This student got 'E+' Grade.")
+
+else:
+    print("This student got failed.")
